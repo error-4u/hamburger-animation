@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(60,70,133);
+background: linear-gradient(90deg, rgba(60,70,133,0.9808298319327731) 0%, rgba(139,15,76,1) 0%, rgba(84,9,80,1) 100%, rgba(92,167,191,1) 100%, rgba(255,0,0,0.7763480392156863) 100%);
+
+}
+.burger{
+    cursor: pointer;
+display: flex;
+flex-direction: column;
+background: none;
+border: none;
+margin: 300px auto;
+gap: 0.9rem;
+ 
+   
+}
+
+.burger div{
+    background-color: rgb(251, 250, 248);
+    width: 68px;
+    border-radius: 4px;
+    height: 6px;
+
+    
+}
+.burger[aria-expanded=true] .line1{
+    transform: translateY(calc(6px + 0.9rem)) rotate(45deg);
+
+    
+}
+
+.burger[aria-expanded=true] .line2{
+    transform:  rotate(45deg);
+    
+}
+.burger[aria-expanded=true] .line3{
+    transform: translateY(calc(-6px + -0.9rem)) rotate(-45deg);
+
+    
+}
